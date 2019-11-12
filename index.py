@@ -135,8 +135,8 @@ def encrypt_win():
     window.title("Encryption")
     window.geometry('2001x8000')
     window.configure(background="#2C3E50")
-    label1=Label(window,text="Select the encryption method",font="Arial",bg="#2C3E50",fg="white")
-    label1.place(x=615,y=100)
+    label1=Label(window,text="Select the encryption method",font=("Arial",27),bg="#2C3E50",fg="white")
+    label1.place(x=510,y=100)
     button1=Button(window,text="ROT13 ",font="Arial",padx=(100),pady=(15),command=rot13E_win,bg="#f89406",fg="lavender")
     button1.place(x=600,y=200)
     button3=Button(window,text=" AES     ",font="Arial",padx=(100),pady=(10),command=AESE_win,bg="#f89406",fg="lavender")
@@ -152,8 +152,8 @@ def decrypt_win():
     window1.title("Decryption")
     window1.geometry('2001x8000')
     window1.configure(background="#2C3E50")
-    label1=Label(window1,text="Select the decryption method",font="Arial",bg="#2C3E50",fg="white")
-    label1.place(x=615,y=100)
+    label1=Label(window1,text="Select the decryption method",font=("Arial",27),bg="#2C3E50",fg="white")
+    label1.place(x=510,y=100)
     button1=Button(window1,text="ROT13 ",font="Arial",padx=(100),pady=(15),command=rot13D_win,bg="#f89406",fg="lavender")
     button1.place(x=600,y=200)
     button3=Button(window1,text="AES     ",font="Arial",padx=(100),pady=(10),command=AESD_win,bg="#f89406",fg="lavender")
@@ -186,8 +186,6 @@ def rot13E_win():
     button6.place(x=1200,y=700)
     button7=Button(window2,text="Back",padx=("100"),pady=("10"),font="Arial",command=back_e,bg="#00b5cc",fg="white")
     button7.place(x=900,y=700)
-    
-
 
 #Function to display MD5 Encryption window
 def AESE_win():
@@ -216,8 +214,7 @@ def AESE_win():
     button12.place(x=1200,y=700)
     button13=Button(window4,text="Back",padx=("100"),pady=("10"),font="Arial",command=back_e,bg="#00b5cc",fg="white")
     button13.place(x=900,y=700)
-
-
+    
 #------------------------------------------------Decryption-------------------------------------------------#
 #Function ROT13 Decryption Window displays
 def rot13D_win():
@@ -242,9 +239,7 @@ def rot13D_win():
     button18.place(x=1200,y=700)
     button19=Button(window6,text="Back",padx=("100"),pady=("10"),font="Arial",command=back_d,bg="#00b5cc",fg="white")
     button19.place(x=900,y=700)
-
-
-
+   
 #Function to display AES Decryption window
 def AESD_win():
     global E13,E14,E14_1
@@ -273,7 +268,6 @@ def AESD_win():
     button25_1=Button(window8,text="Back",padx=("100"),pady=("10"),font="Arial",command=back_e,bg="#00b5cc",fg="white")
     button25_1.place(x=900,y=700)
     
-
 #--------------------------------------Back Button---------------------------------------------------------#
 #Function for back button to display main encryption/ decryption window
 def back_win():
@@ -281,8 +275,8 @@ def back_win():
     root1.title("Welcome")
     root1.geometry('2001x8000')
     root1.configure(background="#2C3E50")
-    label2=Label(root1,text="Select one of these",font="Arial",bg="#2C3E50",fg="white")
-    label2.place(x=670,y=100)
+    label2=Label(root1,text="Select one of these",font=("Arial",27),bg="#2C3E50",fg="white")
+    label2.place(x=600,y=100)
     btn1=Button(root1,text="Encryption",padx=("100"),pady=("10"),font="Arial",command=encrypt_win,bg="#f89406",fg="lavender")
     btn1.place(x=600,y=200)
     btn2=Button(root1,text="Decryption",padx=("100"),pady=("10"),font="Arial",command=decrypt_win,bg="#f89406",fg="lavender")
@@ -296,8 +290,8 @@ def back_e():
     window.title("Encryption")
     window.geometry('2001x8000')
     window.configure(background="#2C3E50")
-    label1=Label(window,text="Select the encryption method",font="Arial",bg="#2C3E50",fg="white")
-    label1.place(x=615,y=100)
+    label1=Label(window,text="Select the encryption method",font=("Arial",27),bg="#2C3E50",fg="white")
+    label1.place(x=510,y=100)
     button1=Button(window,text="ROT13 ",font="Arial",padx=(100),pady=(15),command=rot13E_win,bg="#f89406",fg="lavender")
     button1.place(x=600,y=200)
     button3=Button(window,text="AES     ",font="Arial",padx=(100),pady=(10),command=AESE_win,bg="#f89406",fg="lavender")
@@ -313,8 +307,8 @@ def back_d():
     window1.title("Decryption")
     window1.geometry('2001x8000')
     window1.configure(background="#2C3E50")
-    label1=Label(window1,text="Select the decryption method",font="Arial",bg="#2C3E50",fg="white")
-    label1.place(x=615,y=100)
+    label1=Label(window1,text="Select the decryption method",font=("Arial",27),bg="#2C3E50",fg="white")
+    label1.place(x=510,y=100)
     button1=Button(window1,text="ROT13 ",font="Arial",padx=(100),pady=(15),command=rot13D_win,bg="#f89406",fg="lavender")
     button1.place(x=600,y=200)
     button3=Button(window1,text="AES     ",font="Arial",padx=(100),pady=(10),command=AESD_win,bg="#f89406",fg="lavender")
@@ -332,8 +326,8 @@ def exit_win():
     root1.title("Welcome")
     root1.geometry('2001x8000')
     root1.configure(background="#2C3E50")
-    label2=Label(root1,text="Select one of these",font="Arial",bg="#2C3E50",fg="white")
-    label2.place(x=670,y=100)
+    label2=Label(root1,text="Select one of these",font=("Arial",27),bg="#2C3E50",fg="white")
+    label2.place(x=600,y=100)
     btn1=Button(root1,text="Encryption",padx=("100"),pady=("10"),font="Arial",command=encrypt_win,bg="#f89406",fg="lavender")
     btn1.place(x=600,y=200)
     btn2=Button(root1,text="Decryption",padx=("100"),pady=("10"),font="Arial",command=decrypt_win,bg="#f89406",fg="lavender")
@@ -342,16 +336,13 @@ def exit_win():
     btn3.place(x=1200,y=700)
     root1.mainloop()
 
-#message box
-
-
 #----------------------------------------main_index_window-------------------------------------------------#
 root1=Tk()
 root1.title("Welcome")
 root1.geometry('2001x8000') 
 root1.configure(background="#2C3E50")
-label2=Label(root1,text="Select one of these",font="Arial",bg="#2C3E50",fg="lavender")
-label2.place(x=670,y=100)
+label2=Label(root1,text="Select one of these",font=("Arial",27),bg="#2C3E50",fg="lavender")
+label2.place(x=600,y=100)
 btn1=Button(root1,text="Encryption",padx=("100"),pady=("10"),font="Arial",command=encrypt_win,bg="#f89406",fg="lavender")
 btn1.place(x=600,y=200)
 btn2=Button(root1,text="Decryption",padx=("100"),pady=("10"),font="Arial",command=decrypt_win,bg="#f89406",fg="lavender")
